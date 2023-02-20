@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    h1{
+        font-size: 85px;
+        margin-left: 55px;
+        color: white;
+    }
+
+    body{
+        height: 100vh;
+        background-image: url(zeroUm.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: absolute;
+        
+    }
+    #confirmarTeste{
+        font-size: 75px;
+        color: black;   
+        
+    }
+    .button{
+        margin: 200px;
+        
+        
+    }
+    .button :hover{
+        color: #ffffff;
+        pointer-events: auto;
+        background-color: rgb(13, 255, 0);
+        text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <h1> Modulo01 - Semana03 - Exercício 01 </h1>
+            <div class="button">
+                <button onclick="teste_a_pagina()" id="confirmarTeste">Teste a Página</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        const enviar = document.getElementById("confirmarTeste");
+        function teste_a_pagina(){
+        var sobrenome = prompt("Informe o seu Sobrenome:");
+        var nome = prompt("Informe o seu Nome:");
+        alert('Seu nome completo é : ' + nome + ' ' + sobrenome);
+            
+        event.preventDefault();
+        };
+    </script>
+</body>
+</html>
